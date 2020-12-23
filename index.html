@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>KFC Crud</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.less">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script rel="preload" as="script" crossorigin="anonymous"
+        src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.0.0/less.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/kfc.png">
+    </header>
+    <div class="order">
+        <h1 class="header-name">Your order</h1>
+
+<div class="items-wrapper">
+    <ul id="order-items">
+        <li class="order-item">
+            <span class="item-name">Pizza</span>
+            <span class="quantity">
+                <button id="btn-minus">-</button>
+                <input type="number" value="1" class="quantity-input">
+                <button id="btn-plus">+</button>
+            </span>
+            <span class="price">
+                <span>$7.99</span>
+                <button id="btn-delete">X</button>
+            </span>
+
+        </li>
+    </ul>
+</div>
+        
+        <button id="btn-add">Add food</button>
+        <div class="order-summary">
+            <p>Sub total  <span class="money" id="sub-total">$15.99</span></p>
+            <p>Shipping <span class="money" id="shipping">$2</span></p>
+            <p>Total <span class="money" id="total">$17.99</span></p>
+        </div>
+        <button id="btn-checkout">Checkout</button>
+    </div>
+</body>
+<script src="./helper.js"></script>
+<script src="./script.js"></script>
+
+</html>

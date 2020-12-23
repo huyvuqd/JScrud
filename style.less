@@ -1,0 +1,128 @@
+html {
+    background: linear-gradient(135deg, #FC8B6D 0%, #FFCC6F 100%);
+}
+
+body {
+    min-width: 30rem;
+    // max-height: 30rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    // margin: 10% 36%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    background: rgba(255, 73, 36, 0.83);
+    text-align: center;
+    position: relative;
+
+    .logo {
+        position: relative;
+        top: 3.2rem;
+        background: white;
+        border-radius: 50%;
+        height: 100%;
+        width: 100px;
+        border: solid 1px #ececec;
+    }
+}
+.items-wrapper{
+    height: 123px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.order {
+    background: white;
+    flex: 1;
+    border-radius: 0 0 1rem 1rem;
+    // margin-top: 5rem;
+    padding: 2rem;
+
+    button {
+        padding: 0.25rem 2rem;
+        border: none;
+        border-radius: 0.25rem;
+        height: 2rem;
+
+        &:focus {
+            outline: 0;
+        }
+
+    }
+
+    .btn-quantity {
+        height: 30px;
+        width: 27px;
+        line-height: 16px;
+        background: transparent;
+        font-size: 1rem;
+    }
+
+    .order-summary {
+        padding: 1rem;
+        margin: 1.5rem 0;
+        background: #F4f4f6;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    #btn-checkout {
+        width: 100%;
+        background: #FF6144;
+        color: white;
+    }
+
+    .money {
+        float: right;
+    }
+
+    #btn-add {
+        border: 1px solid gray;
+        width: 10rem;
+        background: white;
+        margin-top: 1rem;
+    }
+
+    .header-name {
+        font-weight: bold;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .order-item {
+        button {
+            padding: 0.5rem;
+        }
+
+        .quantity-input {
+            border: none;
+
+            &:focus {
+                outline: 0;
+            }
+
+            width: 30px;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+        }
+
+        display: flex;
+        font-size: 1rem;
+        justify-content: space-between;
+         line-height: 2rem;
+    }
+
+
+
+    #btn-delete {
+        font-size: 0.8rem;
+    }
+}
